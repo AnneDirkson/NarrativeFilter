@@ -76,7 +76,7 @@ class NarrativeFilter ():
         X = train_data['Post']
         y = train_data['Label']
 
-        vectorizer = CountVectorizer(analyzer = 'char', ngram_range = (4,4))
+        vectorizer = CountVectorizer(analyzer = 'char', ngram_range = (3,3))
 
         ngrams_train = vectorizer.fit_transform(X)
 
